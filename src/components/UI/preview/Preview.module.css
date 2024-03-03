@@ -1,0 +1,33 @@
+:root {
+    --gradient : linear-gradient(90deg, rgba(56,0,115,1) 0%, rgba(43,43,255,1) 63%, rgba(61,97,255,1));
+}
+
+.preview {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-bottom: 2px solid #7574ff;
+    width: 50%;
+}
+
+.text {
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    animation: bg-animation 3s infinite alternate;
+    background-size: 400%;
+}
+
+@keyframes bg-animation {
+   0% {
+       background-position: left;
+   }
+
+    100% {
+        background-position: right;
+    }
+}

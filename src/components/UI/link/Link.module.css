@@ -1,0 +1,29 @@
+.linkText {
+    cursor: pointer;
+    text-decoration: none;
+    color: #211e79;
+    position: relative;
+    transition: 0.2s;
+}
+
+.linkText::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7574ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in;
+}
+
+.linkText:hover{
+    color: #7574ff;
+}
+
+.linkText:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}

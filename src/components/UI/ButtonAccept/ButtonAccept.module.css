@@ -1,0 +1,17 @@
+.btn {
+    max-width: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    background-color: #7574ff;
+    box-shadow: 1px 3px #211e79;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 1px #211e79;
+}

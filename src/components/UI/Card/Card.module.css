@@ -1,0 +1,29 @@
+.card {
+    box-sizing: border-box;
+    cursor: pointer;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.img {
+    max-width: 275px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+.card:hover {
+    color: #7574ff;
+    border-bottom: 3px solid #7574ff;
+}

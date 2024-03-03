@@ -1,0 +1,24 @@
+.wrapper {
+    padding: 15px;
+    margin-left: 5px;
+    background-color: #fff;
+    max-width: 350px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input {
+}
+
+.text {
+    color: #9995ee;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 5px;
+}

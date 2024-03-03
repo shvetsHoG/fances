@@ -1,0 +1,18 @@
+.contentWrapper {
+    padding-top: 15px;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}

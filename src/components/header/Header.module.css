@@ -1,0 +1,143 @@
+.header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 5;
+}
+
+.headerUpWrapper {
+    width: 100%;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerDownWrapper {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerUp {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 70%;
+}
+
+.headerDown {
+    font-family:"Open Sans", sans-serif;
+    color: black;
+    width: 80%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    justify-content: space-between;
+    display: flex;
+    width: 40%;
+}
+
+.contactsItem {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contactsItem:hover {
+    color: #9995ee;
+}
+
+.place {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.place:hover {
+    color: #9995ee;
+}
+
+.downContacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.downTag {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #3e3e3e;
+    font-size: 22px;
+}
+
+.downContactsPhone {
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.initials {
+    font-weight: 900;
+    line-height: 24px;
+    display: inline;
+    font-size: 30px;
+    color: #211e79;
+    cursor: pointer;
+    transition: 0.3s;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.initials::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7574ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in;
+}
+
+.initials:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.initials:hover {
+    color: #7574ff;
+}
+
+.phone {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.phoneSvg {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.phone:hover svg{
+    fill: #7574ff;
+}
+
+.phone:hover .downContactsPhone{
+    color: #7574ff;
+}

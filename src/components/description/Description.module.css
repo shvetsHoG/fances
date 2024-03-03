@@ -1,0 +1,156 @@
+.wrapper {
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8c8c8;
+    padding-bottom: 25px;
+}
+
+.content {
+    max-width: 100vw;
+    margin-top: 15px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contentWrapper {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text {
+    padding: 20px;
+    color: #3e3e3e;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.li {
+    list-style: none;
+    transition: 0.2s;
+}
+
+.liWrapper>svg {
+    transition: 0.2s;
+}
+
+.check {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.liWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.liWrapper:hover li {
+    color: #7574ff;
+}
+
+.liWrapper:hover svg {
+    fill: #7574ff;
+}
+
+.formWrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.phone {
+    flex-wrap: nowrap;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.phoneWrapper {
+    cursor: pointer;
+    font-weight: 900;
+    color: #9995ee;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.email {
+    flex-wrap: nowrap;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.phoneSvg {
+    fill: #9995ee;
+}
+
+.mailSvg {
+    fill: #9995ee;
+}
+
+.emailWrapper {
+    cursor: pointer;
+    font-weight: 900;
+    color: #9995ee;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hoverer {
+    font-weight: 700;
+    line-height: 24px;
+    display: inline;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-style: italic;
+    position: relative;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+.hoverer::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7574ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in;
+}
+
+.hoverer:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hoverer:hover {
+    color: #7574ff;
+}

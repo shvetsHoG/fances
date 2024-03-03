@@ -1,0 +1,93 @@
+.sideBarWrapper {
+    padding-top: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarText {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 25px;
+    background-color: #8892dd;
+}
+
+.sidebarTextHeader {
+    font-weight: bold;
+    padding: 15px 30px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.sidebarTextContent {
+    padding: 15px 30px;
+}
+
+.sidebarWorks {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.sidebarWorksUp {
+    font-weight: bold;
+    padding: 15px 25px;
+    border-bottom: 1px solid #76757a;
+    text-align: center;
+    color: #7574ff;
+}
+
+.sidebarWorksDown {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 25px;
+}
+
+.sidebarWorksDownImg {
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 250px;
+    min-height: 200px;
+    background-image: url("../../images/Скриншот-18-06-2023-230600-1024x697.jpg");
+}
+
+.sidebarWorksDown a {
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+.sidebarWorksDown>a:hover {
+    text-decoration: underline;
+}
+
+.sidebarReviews {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: black;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.sidebarReviewsUp {
+    font-weight: bold;
+    padding: 15px 25px;
+    border-bottom: 1px solid #76757a;
+}
+
+.sidebarReviewsDown {
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+.review {
+    margin-top: 15px;
+}
+
+.reviewClient {
+    font-weight: bold;
+}

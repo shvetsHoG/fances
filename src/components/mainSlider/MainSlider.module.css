@@ -1,0 +1,48 @@
+.wrapper {
+    margin-top: 120px;
+    width: 100%;
+    height: 735px;
+    position: relative;
+    overflow-x: clip;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: img-animation linear forwards;
+    animation-timeline: view();
+}
+
+.main {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 350px;
+    line-height: 54px;
+    font-family: "Open Sans",  sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    color: white;
+
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -300px;
+}
+
+.mainText {
+    margin-top: 35px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@keyframes fade-out {
+    to {opacity: 0;}
+}
+
+@keyframes img-animation {
+    40% {opacity: 1; scale: 1}
+    85%,100% {opacity: 0; scale: 2;}
+}
