@@ -1,0 +1,36 @@
+.backToMain {
+    max-width: 225px;
+    position: fixed;
+    background-color: white;
+    padding: 15px;
+    left: 15px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.backToMainSvg {
+    transition: 0.2s;
+}
+
+.backToMainText {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.2s;
+}
+
+.backToMain:hover {
+    border-bottom: 2px solid #9995ee;
+}
+
+.backToMain:hover .backToMainSvg {
+    fill: #9995ee;
+}
+
+.backToMain:hover .backToMainText {
+    color: #9995ee;
+}

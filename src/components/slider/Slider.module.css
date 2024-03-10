@@ -1,6 +1,6 @@
 .sliderWrapper {
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     background-color: #c8c8c8;
@@ -8,16 +8,16 @@
 
 .slider {
     object-fit: cover;
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     margin-top: -60px;
     position: relative;
     display: block;
 }
 
 .slider img {
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     flex-shrink: 0;
     flex-grow: 0;
     transition: translate 0.2s ease-in-out;
@@ -91,6 +91,7 @@
 }
 
 .linkText {
+    font-size: 22px;
     cursor: pointer;
     text-decoration: none;
     color: #211e79;

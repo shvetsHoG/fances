@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: rgba(255,255,255, 0);
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: 0.3s;
+    opacity: 1;
+    z-index: 5;
+}
+
+.svg {
+    transition: 0.2s;
+}
+
+.wrapper:hover .svg {
+    fill: #211e79;
+}
+
+.wrapper:hover {
+    border: 2px solid #211e79;
+}
+
+.wrapper.hidden {
+    opacity: 0;
+}

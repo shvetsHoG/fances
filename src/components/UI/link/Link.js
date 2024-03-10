@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from "../../slider/Slider.module.css";
 
-const Link = ({children}) => {
+const Link = ({children, ...props}) => {
     return (
-        <a className={classes.linkText}>{children}</a>
+        <a {...props} className={classes.linkText}>{children}</a>
     );
 };
 

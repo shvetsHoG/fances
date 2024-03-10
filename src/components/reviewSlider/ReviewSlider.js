@@ -10,8 +10,11 @@ import seventh from "../../images/rv7.jpg"
 import eight from "../../images/rv8.jpg"
 import nine from "../../images/rv9.jpg"
 import Link from "../UI/link/Link";
+import {useNavigate} from "react-router-dom";
 
-const ReviewSlider = () => {
+const ReviewSlider = (props) => {
+
+    const router = useNavigate()
 
     const images = [first, sec, third, fourth, fifth, sixth, seventh, eight, nine]
 
@@ -20,25 +23,26 @@ const ReviewSlider = () => {
     const showNext = () => {
         if (position === images.length - 1) {
             setPosition(0)
-            console.log(position)
         } else {
             setPosition(position+1)
-            console.log(position)
         }
     }
 
     const showPrev = () => {
         if (position === 0) {
             setPosition(images.length - 1)
-            console.log(position)
         } else {
             setPosition(position-1)
-            console.log(position)
         }
     }
 
+    const routeTo = (url) => {
+        router(url)
+        window.scrollTo(0,0)
+    }
+
     return (
-        <div className={classes.sliderWrapper}>
+        <div className={classes.sliderWrapper} {...props}>
             <div className={classes.slider}>
                 <div className={classes.images}>
                     {images.map(url =>
@@ -53,7 +57,7 @@ const ReviewSlider = () => {
                     </button>
                 </div>
                 <div className={classes.link}>
-                    <Link>Все отзывы</Link>
+                    <Link onClick={() => routeTo("/reviews")}>Все отзывы</Link>
                 </div>
             </div>
         </div>

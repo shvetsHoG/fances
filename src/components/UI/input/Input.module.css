@@ -1,10 +1,25 @@
 .input {
-    min-width: 300px;
+    width: 100%;
+    min-width: 275px;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    line-height: 1;
+    font-size: 16px;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    transition: 0.2s;
+    /*width: 100%;
     padding: 5px 15px;
     border-radius: 16px;
     border: 1px solid #3e3e3e;
     outline: none;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    color: #3e3e3e;
+    color: #3e3e3e;*/
+}
+
+.input:focus {
+    box-shadow: 0 1px 0 0 black;
 }

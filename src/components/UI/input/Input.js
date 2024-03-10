@@ -3,7 +3,7 @@ import classes from "./Input.module.css";
 
 const Input = ({placeholder, ...props}) => {
     return (
-        <input {...props} className={classes.input} placeholder={placeholder} type="text"/>
+        <input {...props} className={classes.input} type="text"/>
     );
 };
 

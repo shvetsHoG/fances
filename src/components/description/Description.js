@@ -1,15 +1,10 @@
 import React from 'react';
 import classes from "./Description.module.css";
-import Sider from "../UI/sider/Sider";
-import Background from "../UI/background/Background";
-import Preview from "../UI/preview/Preview";
-import ReviewSlider from "../reviewSlider/ReviewSlider";
 import Form from "../form/Form";
 
 const Description = () => {
     return (
         <div className={classes.wrapper}>
-            <Preview>СТРОИТЕЛЬСТВО ЗАБОРОВ ПОД КЛЮЧ</Preview>
             <div className={classes.content}>
                 <div className={classes.contentWrapper}>
                     <div className={classes.formWrapper}>
@@ -37,16 +32,16 @@ const Description = () => {
                                 <svg className={classes.mailSvg} width="25px" height="25px" version="1.1" viewBox="0 0 64 64"><g id="Glyph_copy_2"><path d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z"/><path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z"/></g></svg>
                                 <span>Наша почта</span>
                             </div>
-                            <div className={classes.hoverer} style={{fontSize:"20px", cursor:"pointer"}}>
-                                enikolaevich557@gmail.com
+                            <div className={classes.hoverer} style={{fontSize:"18px", cursor:"pointer"}}>
+                                enikolaevich5577@gmail.com
                             </div>
                         </div>
                         <Form/>
                     </div>
                     <div className={classes.textWrapper}>
-                        <p className={classes.text}>
+                        <div className={classes.text}>
                             Установим забор в рассрочку <span style={{backgroundColor:"#7574ff", fontStyle:"italic"}}>за 2 дня</span>
-                            , и дадим гарантию <br/> <span style={{backgroundColor:"#7574ff", fontStyle:"italic"}}>3 года</span> на обслуживание вашего забора. <br/>
+                            , и дадим гарантию <br/> 3 года <span style={{backgroundColor:"#7574ff", fontStyle:"italic"}}>с нашим материалом</span> на обслуживание вашего забора. <br/>
                             <hr style={{marginTop:'5px'}}/>
                             Позвоните или напишите мне, чтобы узнать стоимость вашего забора.
                             С нами безопасно: <br/>
@@ -68,11 +63,10 @@ const Description = () => {
                                     <li className={classes.li}>Предоставляем услугу официально: заключаем договор,<br/> выдаем чек и гарантию.</li>
                                 </div>
                             </div>
-                            <p style={{fontSize:"30px", fontWeight:"900", color:"#7574ff", textAlign:"center", marginTop:"15px"}}>Звоните ! Мы работаем с 8:00 до 20:00</p>
-                        </p>
+                            <div style={{fontSize:"30px", fontWeight:"900", color:"#7574ff", textAlign:"center", marginTop:"15px"}}>Звоните ! Мы работаем с 8:00 до 20:00</div>
+                        </div>
                     </div>
                 </div>
-                <ReviewSlider></ReviewSlider>
             </div>
         </div>
     );

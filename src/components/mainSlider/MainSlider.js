@@ -10,7 +10,7 @@ const MainSlider = () => {
                 <p>ИЗГОТОВЛЕНИЕ <br/> И МОНТАЖ ЗАБОРОВ</p>
                 <p style={{marginTop: "35px",
                     fontSize: "26px",
-                    fontWeight: "700"}}>В Липецке и Липецкой области</p>
+                    fontWeight: "700"}}>В Липецке и ближайших регионах</p>
             </div>
         </div>
     );

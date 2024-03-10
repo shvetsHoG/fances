@@ -9,31 +9,34 @@ import sixth from "../../images/13.jpg"
 import seventh from "../../images/15.jpg"
 import eigth from "../../images/20.jpg"
 import Link from "../UI/link/Link";
+import {useNavigate} from "react-router-dom";
 
 const Slider = () => {
 
     const images = [first, sec, third, fourth, fifth, sixth, seventh, eigth]
 
     const [position, setPosition] = useState(0)
+    const router = useNavigate();
 
     const showNext = () => {
         if (position === images.length - 1) {
             setPosition(0)
-            console.log(position)
         } else {
             setPosition(position+1)
-            console.log(position)
         }
     }
 
     const showPrev = () => {
         if (position === 0) {
             setPosition(images.length - 1)
-            console.log(position)
         } else {
             setPosition(position-1)
-            console.log(position)
         }
+    }
+
+    const routeTo = (url) => {
+        router(url)
+        window.scrollTo(0,0)
     }
 
     return (
@@ -41,7 +44,7 @@ const Slider = () => {
             <div className={classes.slider}>
                 <div className={classes.images}>
                     {images.map(url =>
-                        <img style={{translate:`${-800*position}px`}} src={url} alt=""/>)}
+                        <img style={{translate:`${-1000*position}px`}} src={url} alt=""/>)}
                 </div>
                 <div className={classes.btns}>
                     <button onClick={() => showPrev()} className={classes.btnLeft}>
@@ -52,7 +55,7 @@ const Slider = () => {
                     </button>
                 </div>
                 <div className={classes.link}>
-                    <Link>Все работы</Link>
+                    <Link onClick={() => routeTo("/photos")}>Все работы</Link>
                 </div>
             </div>
         </div>

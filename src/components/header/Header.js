@@ -2,18 +2,29 @@ import React from 'react';
 import classes from "./Header.module.css";
 import ButtonCall from "../UI/ButtonCall/ButtonCall";
 import ButtonAccept from "../UI/ButtonAccept/ButtonAccept";
+import {useDispatch} from "react-redux";
+import {setModalState} from "../../store/slices/ModalSlice";
+import {Link, useNavigate} from "react-router-dom";
 
 const Header = () => {
+
+    const dispatch = useDispatch();
+    const router = useNavigate();
+
+    const routeTo = (url) => {
+        router(url)
+        window.scrollTo(0,0)
+    }
+
     return (
         <header className={classes.header}>
             <div className={classes.headerUpWrapper}>
                 <div className={classes.headerUp}>
                     <div className={classes.contacts}>
-                        <div className={classes.contactsItem}>Каталог</div>
-                        <div className={classes.contactsItem}>Цены</div>
-                        <div className={classes.contactsItem}>Фотогалерея</div>
-                        <div className={classes.contactsItem}>О нас</div>
-                        <div className={classes.contactsItem}>Контакты</div>
+                        <div className={classes.contactsItem} onClick={() => routeTo("/catalog")}>Каталог</div>
+                        <div className={classes.contactsItem} onClick={() => routeTo("/photos")}>Фотогалерея</div>
+                        <div className={classes.contactsItem} onClick={() => routeTo("/reviews")}>Отзывы о нас</div>
+                        <div className={classes.contactsItem} onClick={() => routeTo("/contacts")}>Контакты</div>
                     </div>
                     <div className={classes.place}>
                         <div className={classes.contactsItem}>Липецк</div>
@@ -26,13 +37,13 @@ const Header = () => {
                         <div>
                             Заборы "Под ключ"
                         </div>
-                        <div className={classes.initials}>
+                        <div className={classes.initials} onClick={() => routeTo("/")}>
                             Акулов Е.Н.
                         </div>
                     </div>
                     <div className={classes.downContacts}>
                         <div className={classes.downContactsBtns}>
-                            <ButtonAccept>Заказать звонок</ButtonAccept>
+                            <ButtonAccept onClick={() => dispatch(setModalState(true))}>Заказать звонок</ButtonAccept>
                         </div>
                         <div className={classes.phone}>
                             <svg className={classes.phoneSvg} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
