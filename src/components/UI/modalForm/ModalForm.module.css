@@ -1,4 +1,6 @@
 .wrapper {
+    border-radius: 8px;
+    border: 3px solid #9995ee;
     padding: 15px;
     margin-left: 5px;
     background-color: #fff;
@@ -62,4 +64,13 @@
 .text.active {
     font-size: 16px;
     transform: translateY(-20px);
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        max-width: 350px;
+    }
+    .mainText {
+        font-size: 24px;
+    }
 }

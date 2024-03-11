@@ -43,7 +43,7 @@ const Form = (props) => {
                         placeholder="Введите ваш телефон"
                     ></Input>
                 </div>
-                <ButtonAccept onClick={(e) => getData(e)}>Отправить данные</ButtonAccept>
+                <ButtonAccept onClick={(e) => getData(e)}>Оставить заявку</ButtonAccept>
             </form>
         </div>
     );

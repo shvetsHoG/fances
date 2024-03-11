@@ -34,7 +34,7 @@ const Header = () => {
             <div className={classes.headerDownWrapper}>
                 <div className={classes.headerDown}>
                     <div className={classes.downTag}>
-                        <div>
+                        <div className={classes.previewText}>
                             Заборы "Под ключ"
                         </div>
                         <div className={classes.initials} onClick={() => routeTo("/")}>

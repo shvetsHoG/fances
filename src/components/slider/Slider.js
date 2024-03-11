@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import classes from "./Slider.module.css";
 import first from "../../images/2.jpg"
 import sec from "../../images/5.jpg"
@@ -16,7 +16,10 @@ const Slider = () => {
     const images = [first, sec, third, fourth, fifth, sixth, seventh, eigth]
 
     const [position, setPosition] = useState(0)
+    const [width, setWidth] = useState(1000)
     const router = useNavigate();
+
+    const divRef = useRef();
 
     const showNext = () => {
         if (position === images.length - 1) {
@@ -39,12 +42,16 @@ const Slider = () => {
         window.scrollTo(0,0)
     }
 
+    useEffect(() => {
+        setWidth(divRef.current.getBoundingClientRect().width)
+    }, [divRef.current]);
+
     return (
         <div className={classes.sliderWrapper}>
-            <div className={classes.slider}>
+            <div className={classes.slider} ref={divRef}>
                 <div className={classes.images}>
                     {images.map(url =>
-                        <img style={{translate:`${-1000*position}px`}} src={url} alt=""/>)}
+                        <img style={{translate:`${-width*position}px`}} src={url} alt=""/>)}
                 </div>
                 <div className={classes.btns}>
                     <button onClick={() => showPrev()} className={classes.btnLeft}>

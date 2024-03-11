@@ -6,7 +6,6 @@
 }
 
 .content {
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 35px 0;
@@ -17,4 +16,22 @@
     font-size: 42px;
     font-family: "Open sans", sans-serif;
     font-weight: 900;
+}
+
+@media (max-width: 500px) {
+    .text {
+        font-size: 32px;
+    }
+    .contentWrapper{
+        height: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .text {
+        font-size: 32px;
+    }
+    .contentWrapper{
+        height: 200px;
+    }
 }

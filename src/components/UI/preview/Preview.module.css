@@ -31,3 +31,21 @@
         background-position: right;
     }
 }
+
+@media (max-width: 675px) {
+    .preview {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .preview {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .preview {
+        font-size: 14px;
+    }
+}

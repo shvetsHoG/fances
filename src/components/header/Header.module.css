@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    width: 70%;
+    width: 80%;
 }
 
 .headerDown {
@@ -45,7 +45,7 @@
 .contacts {
     justify-content: space-between;
     display: flex;
-    width: 40%;
+    gap:15px;
 }
 
 .contactsItem {
@@ -55,6 +55,10 @@
 
 .contactsItem:hover {
     color: #9995ee;
+}
+
+.previewText {
+
 }
 
 .place {
@@ -74,6 +78,9 @@
 }
 
 .downTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     color: #3e3e3e;
@@ -140,4 +147,99 @@
 
 .phone:hover .downContactsPhone{
     color: #7574ff;
+}
+
+
+@media (max-width: 750px) {
+    .previewText {
+        font-size: 16px;
+    }
+
+    .initials {
+        font-size: 22px;
+    }
+
+    .downContactsPhone{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 630px) {
+    .phoneSvg {
+        width: 18px;
+        height: 18px;
+    }
+    .headerDown {
+        width: 90%;
+    }
+    .contactsItem {
+        font-size: 14px;
+    }
+
+    .previewText {
+        font-size: 14px;
+    }
+
+    .initials {
+        font-size: 20px;
+    }
+
+    .downContactsPhone{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contactsItem {
+        font-size: 12px;
+    }
+
+    .previewText {
+        font-size: 12px;
+    }
+
+    .initials {
+        font-size: 18px;
+    }
+
+    .downContactsPhone{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phoneSvg {
+        width: 16px;
+        height: 16px;
+    }
+    .contactsItem {
+        font-size: 10px;
+    }
+
+    .previewText {
+        font-size: 10px;
+    }
+
+    .initials {
+        font-size: 16px;
+    }
+
+    .downContactsPhone{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .contactsItem {
+        font-size: 9px;
+    }
+
+    .previewText {
+        font-size: 8px;
+    }
+
+    .initials {
+        font-size: 14px;
+    }
 }

@@ -24,7 +24,7 @@ const Side = () => {
                         <div className="">НАШИ РАБОТЫ</div>
                     </div>
                     <div className={classes.sidebarWorksDown}>
-                        <img src="../../images/Скриншот-18-06-2023-230600-1024x697.jpg" className={classes.sidebarWorksDownImg} alt="" />
+                        <img src="../../../public/images/main.jpg" className={classes.sidebarWorksDownImg} alt="" />
                         <a href="">Все фотографии</a>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Side = () => {
                     </div>
                     <div className={classes.sidebarReviewsDown}>
                         <div className={classes.review}>
-                            <img src="../../images/Скриншот-18-06-2023-230600-1024x697.jpg" alt=""/>
+                            <img src="../../../public/images/main.jpg" alt=""/>
                         </div>
                     </div>
                 </div>

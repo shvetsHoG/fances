@@ -10,6 +10,7 @@
     animation-timeline: view();
     animation-range:250px 500px;
     padding-bottom: 5px;
+
 }
 
 @keyframes fade-in {

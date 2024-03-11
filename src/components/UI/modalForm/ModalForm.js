@@ -5,7 +5,6 @@ import Input from "../input/Input";
 import {useDispatch, useSelector} from "react-redux";
 import {setAllFalse, setName, setNameFocus, setPhone, setPhoneFocus} from "../../../store/slices/FormSlice";
 import {setModalState} from "../../../store/slices/ModalSlice";
-import PostService from "../../../API/PostService";
 
 const ModalForm = (props) => {
 
@@ -26,13 +25,11 @@ const ModalForm = (props) => {
         const formData = new FormData()
         formData.append("name", name)
         formData.append("phone", phone)
-        const responce = await fetch("http://localhost/sendmail.php", {
+        const responce = await fetch("https://zaborylipetsk.ru/public/api/sendmail.php" /*"https://zaborylipetsk.ru/public/api/sendmail.php"*/, {
             method: "POST",
             body: formData,
         });
-        /*PostService.sendMail(formData)*/
         exit()
-        console.log(name, phone, formData)
     }
 
 
