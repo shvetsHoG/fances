@@ -25,7 +25,7 @@ const Variants = () => {
             <div className={classes.content}>
                 <Preview>Виды заборов</Preview>
                 <div className={classes.box}>
-                    {kinds.map(kind => <Card url={kind[1]}>{kind[0]}</Card>)}
+                    {kinds.map(kind => <Card key={kind[1]} url={kind[1]}>{kind[0]}</Card>)}
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@ const Slider = () => {
             <div className={classes.slider} ref={divRef}>
                 <div className={classes.images}>
                     {images.map(url =>
-                        <img style={{translate:`${-width*position}px`}} src={url} alt=""/>)}
+                        <img key={url} style={{translate:`${-width*position}px`}} src={url} alt=""/>)}
                 </div>
                 <div className={classes.btns}>
                     <button onClick={() => showPrev()} className={classes.btnLeft}>

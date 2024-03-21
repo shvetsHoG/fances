@@ -46,7 +46,7 @@ const ReviewSlider = (props) => {
             <div className={classes.slider}>
                 <div className={classes.images}>
                     {images.map(url =>
-                        <img style={{translate:`${-300*position}px`}} src={url} alt=""/>)}
+                        <img key={url} style={{translate:`${-300*position}px`}} src={url} alt=""/>)}
                 </div>
                 <div className={classes.btns}>
                     <button onClick={() => showPrev()} className={classes.btnLeft}>
