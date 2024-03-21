@@ -49,6 +49,8 @@
 }
 
 .contactsItem {
+    color: #fff;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -95,6 +97,7 @@
 }
 
 .initials {
+    text-decoration: none;
     font-weight: 900;
     line-height: 24px;
     display: inline;

@@ -21,10 +21,10 @@ const Header = () => {
             <div className={classes.headerUpWrapper}>
                 <div className={classes.headerUp}>
                     <div className={classes.contacts}>
-                        <a className={classes.contactsItem} onClick={() => routeTo("/catalog")}>Каталог</a>
-                        <a className={classes.contactsItem} onClick={() => routeTo("/photos")}>Фотогалерея</a>
-                        <a className={classes.contactsItem} onClick={() => routeTo("/reviews")}>Отзывы о нас</a>
-                        <a className={classes.contactsItem} onClick={() => routeTo("/contacts")}>Контакты</a>
+                        <Link className={classes.contactsItem} to="/catalog">Каталог</Link>
+                        <Link className={classes.contactsItem} to="/photos">Фотогалерея</Link>
+                        <Link className={classes.contactsItem} to="/reviews">Отзывы о нас</Link>
+                        <Link className={classes.contactsItem} to="/contacts">Контакты</Link>
                     </div>
                     <div className={classes.place}>
                         <div className={classes.contactsItem}>Липецк</div>
@@ -37,9 +37,9 @@ const Header = () => {
                         <div className={classes.previewText}>
                             Заборы "Под ключ"
                         </div>
-                        <a className={classes.initials} onClick={() => routeTo("/")}>
+                        <Link className={classes.initials} to="/">
                             Акулов Е.Н.
-                        </a>
+                        </Link>
                     </div>
                     <div className={classes.downContacts}>
                         <div className={classes.downContactsBtns}>

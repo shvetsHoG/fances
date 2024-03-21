@@ -8,7 +8,7 @@ import fifth from "../../images/8.jpg"
 import sixth from "../../images/13.jpg"
 import seventh from "../../images/15.jpg"
 import eigth from "../../images/20.jpg"
-import Link from "../UI/link/Link";
+import StyledLink from "../UI/link/StyledLink";
 import {useNavigate} from "react-router-dom";
 
 const Slider = () => {
@@ -62,7 +62,7 @@ const Slider = () => {
                     </button>
                 </div>
                 <div className={classes.link}>
-                    <Link onClick={() => routeTo("/photos")}>Все работы</Link>
+                    <StyledLink to="/photos">Все работы</StyledLink>
                 </div>
             </div>
         </div>

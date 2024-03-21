@@ -9,7 +9,7 @@ import sixth from "../../images/rv6.jpg"
 import seventh from "../../images/rv7.jpg"
 import eight from "../../images/rv8.jpg"
 import nine from "../../images/rv9.jpg"
-import Link from "../UI/link/Link";
+import StyledLink from "../UI/link/StyledLink";
 import {useNavigate} from "react-router-dom";
 
 const ReviewSlider = (props) => {
@@ -57,7 +57,7 @@ const ReviewSlider = (props) => {
                     </button>
                 </div>
                 <div className={classes.link}>
-                    <Link onClick={() => routeTo("/reviews")}>Все отзывы</Link>
+                    <StyledLink to="/reviews">Все отзывы</StyledLink>
                 </div>
             </div>
         </div>
