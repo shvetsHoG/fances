@@ -33,7 +33,7 @@ const Description = () => {
                                 <span>Наша почта</span>
                             </div>
                             <div className={classes.hoverer} style={{fontSize:"18px", cursor:"pointer"}}>
-                                enikolaevich5577@gmail.com
+                                enikolaevic5577@gmail.com
                             </div>
                         </div>
                         <Form/>

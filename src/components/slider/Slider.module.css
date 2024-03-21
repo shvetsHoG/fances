@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    background: linear-gradient(90deg, rgba(228,210,249,1) 0%, rgba(192,178,247,1) 63%, rgba(176,160,249,1) 100%);
 }
 
 .slider {

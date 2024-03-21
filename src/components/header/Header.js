@@ -21,10 +21,10 @@ const Header = () => {
             <div className={classes.headerUpWrapper}>
                 <div className={classes.headerUp}>
                     <div className={classes.contacts}>
-                        <div className={classes.contactsItem} onClick={() => routeTo("/catalog")}>Каталог</div>
-                        <div className={classes.contactsItem} onClick={() => routeTo("/photos")}>Фотогалерея</div>
-                        <div className={classes.contactsItem} onClick={() => routeTo("/reviews")}>Отзывы о нас</div>
-                        <div className={classes.contactsItem} onClick={() => routeTo("/contacts")}>Контакты</div>
+                        <a className={classes.contactsItem} onClick={() => routeTo("/catalog")}>Каталог</a>
+                        <a className={classes.contactsItem} onClick={() => routeTo("/photos")}>Фотогалерея</a>
+                        <a className={classes.contactsItem} onClick={() => routeTo("/reviews")}>Отзывы о нас</a>
+                        <a className={classes.contactsItem} onClick={() => routeTo("/contacts")}>Контакты</a>
                     </div>
                     <div className={classes.place}>
                         <div className={classes.contactsItem}>Липецк</div>
@@ -37,9 +37,9 @@ const Header = () => {
                         <div className={classes.previewText}>
                             Заборы "Под ключ"
                         </div>
-                        <div className={classes.initials} onClick={() => routeTo("/")}>
+                        <a className={classes.initials} onClick={() => routeTo("/")}>
                             Акулов Е.Н.
-                        </div>
+                        </a>
                     </div>
                     <div className={classes.downContacts}>
                         <div className={classes.downContactsBtns}>

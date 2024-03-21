@@ -5,6 +5,7 @@ import Preview from "../../components/UI/preview/Preview";
 import Header from "../../components/header/Header";
 import BackToMain from "../../components/UI/backToMain/BackToMain";
 import ScrollToTop from "../../components/UI/scrollToTop/ScrollToTop";
+import {Helmet} from "react-helmet-async";
 
 const PhotoPage = () => {
 
@@ -16,6 +17,11 @@ const PhotoPage = () => {
 
     return (
         <div className={classes.wrapper}>
+            <Helmet>
+                <title>Фотографии наших работ</title>
+                <meta name="description" content="Фотографии проделанных работах, заборы в Липецке и ближайших регионах под ключ, недорого, быстро, качественно!"/>
+                <link rel="canonical" href="/photos"/>
+            </Helmet>
             <ScrollToTop/>
             <BackToMain/>
             <div className={classes.content}>

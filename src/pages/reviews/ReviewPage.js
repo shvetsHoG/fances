@@ -4,6 +4,7 @@ import Preview from "../../components/UI/preview/Preview";
 import Card from "../../components/UI/Card/Card";
 import BackToMain from "../../components/UI/backToMain/BackToMain";
 import ScrollToTop from "../../components/UI/scrollToTop/ScrollToTop";
+import {Helmet} from "react-helmet-async";
 
 const ReviewPage = () => {
 
@@ -15,6 +16,11 @@ const ReviewPage = () => {
 
     return (
         <div className={classes.wrapper}>
+            <Helmet>
+                <title>Отзывы наших клиентов</title>
+                <meta name="description" content="Отзывы о проделанных работах, заборы в Липецке и ближайших регионах под ключ, недорого, быстро, качественно!"/>
+                <link rel="canonical" href="/reviews"/>
+            </Helmet>
             <BackToMain/>
             <ScrollToTop/>
             <div className={classes.content}>
